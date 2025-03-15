@@ -1,16 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Created on 2023/1/30
-@author: Monica Xu
-time dependent hamiltonion to for magnon achieve bloch oscillation.
+@author: Xu
+time dependent hamiltonion to for magnon.
 for i in range(n_max-1):
     hami[i,i+1] = g * exp( i* (omega_{n+1} - omega_{n} - Omega) t )
-    hami[i+1,i] = g * exp( -i* (omega_{n+1} - omega_{n} - Omega) t )
-  
-能级 omega_n = omega0 + (n * n) * Omega_prime ,n>=0 这里omega0是n=0的能级
-magnon含时间布洛赫振荡哈密顿量；初始波包人为用高斯函数构造。
-
-所有频率使用模拟值                                                                                                                                              。
+    hami[i+1,i] = g * exp( -i* (omega_{n+1} - omega_{n} - Omega) t )                                                                                                                                            。
 """
 import numpy as np
 import matplotlib.pyplot as plt
