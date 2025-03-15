@@ -105,7 +105,7 @@ params = dict(
     n_times = 951,
 )  #950,951
 # ========above is parameters===================
-def lz_grid_time_evolution(kappa0, sigma=0.01, t_end=1, n=10, n_times=201):
+def time_evolution(kappa0, sigma=0.01, t_end=1, n=10, n_times=201):
     global wait
     wait = 0
     k0 = 0 #14 -1,-8,-14,-20
@@ -148,7 +148,7 @@ def plot_style(xlabel='x', ylabel='y'):
     plt.yticks(size=size)
 
 ##===============================================================================  
-lz_grid_time_evolution(kappa0=25, **params)
+time_evolution(kappa0=25, **params)
 ''''if kappa0 = -25, the system will be driven to higher resonant mode.
     if kappa0 = 0, then Omega(t) is a constant. When Omega = 0.135*(2*np.pi), 
                     Bloch oscillation can be achieved.'''
