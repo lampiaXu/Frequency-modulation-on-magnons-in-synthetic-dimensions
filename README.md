@@ -1,1 +1,1 @@
-# lampiaXu-Frequency-modulation-on-magnons-in-synthetic-dimensions
+# Frequency-modulation-on-magnons-in-synthetic-dimensions
